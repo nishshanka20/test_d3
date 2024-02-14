@@ -1,9 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
-import { select, line, curveCardinal } from "d3";
+import { select, line, curveCardinal, randomInt, range } from "d3";
 
 function LineChart() {
+  const randata = range(10).map((d) => randomInt(0, 100));
+
+  console.log(randata);
   const [data, setData] = useState([25, 30, 45, 60, 20, 65, 75]);
   const svgRef = useRef();
+  console.log(data);
 
   useEffect(() => {
     const svg = select(svgRef.current);

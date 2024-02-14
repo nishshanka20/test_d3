@@ -6,11 +6,14 @@ import { select } from "d3";
 import Test from "./components/Test";
 import LineChart from "./components/LineChart";
 import SimpleOperations from "./components/SimpleOperarions";
+import Transform from "./components/SimpleOperation_transform";
+import Trancisions from "./components/Test_Trancisions";
+import ScatterPlot from "./components/ScatterPlot";
 
 function App() {
   return (
     <>
-      <LineChart />
+      <ScatterPlot />
     </>
   );
 }
